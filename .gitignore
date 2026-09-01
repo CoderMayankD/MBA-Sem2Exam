@@ -41,3 +41,6 @@ Thumbs.db
 # ---- Pipeline derived/intermediate cache (regenerable, not meant for remote viewing) ----
 .cache/
 shared/
+
+# ---- Screenshot images extracted from lectures — keep the repo text-only/lean ----
+*.png
