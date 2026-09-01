@@ -112,65 +112,61 @@ def main():
         print("(dry run, stopping here)")
         return
 
-    # Phase 0: make sure each involved subject's document index is current (cheap, cached).
+    # Doc index per subject touched by this batch (cheap, cached — not worth redoing per lecture).
     doc_indexes = {}
     for subject in {r.subject for r in batch}:
         doc_indexes[subject] = build_or_update_index(subject, config)
 
-    # Phase 1: transcribe every video (one whisper model instance, reused across the batch).
-    transcripts = {}
-    for r in batch:
-        transcripts[r.slug] = transcribe_video(r.path, r.subject, config)
+    # Each recording is fully processed — transcribe, screenshots, vision, notes, write, push —
+    # before moving to the next one. (Previously this ran phase-wise across the WHOLE batch:
+    # transcribe everything, then screenshot everything, then vision-analyze everything, etc.,
+    # which made sense back when vision and notes used two different Ollama models and swapping
+    # between them per-lecture had a real cost. Now both use gemma4:12b — there's no swap cost
+    # left to amortize — but the phase-wise structure meant NO lecture's notes file (or push)
+    # appeared until vision analysis had finished for every recording in the batch, which could
+    # be a long, silent wait. Per-lecture end-to-end fixes that: each lecture finishes and pushes
+    # on its own before the next one starts.)
+    ollama = Ollama(config)
+    vision_max_tokens = config["models"].get("vision_max_tokens", 500)
+    from lib.vision import analyze_screenshot
 
-    # Phase 2: extract screenshots for every video (ffmpeg only, no GPU model contention).
-    screenshots = {}
     for r in batch:
+        print(f"=== {r.subject} / {r.title} ===", flush=True)
+
+        segments = transcribe_video(r.path, r.subject, config)
+
         shots_dir = notes_dir(r.subject) / r.slug
-        screenshots[r.slug] = extract_screenshots(
+        shots = extract_screenshots(
             r.path, shots_dir, config["screenshots"]["scene_threshold"], config["screenshots"]["min_gap_seconds"]
         )
-        print(f"[screenshots] {r.title}: {len(screenshots[r.slug])} candidate frame(s)")
-
-    # Phase 3: vision-analyze every screenshot (gemma4:12b loaded once, stays resident).
-    ollama = Ollama(config)
-    analyzed_shots = {}
-    for r in batch:
-        from lib.vision import analyze_screenshot
+        print(f"[screenshots] {r.title}: {len(shots)} candidate frame(s)")
 
         kept = []
-        total = len(screenshots[r.slug])
-        vision_max_tokens = config["models"].get("vision_max_tokens", 500)
-        for i, shot in enumerate(screenshots[r.slug], start=1):
+        for i, shot in enumerate(shots, start=1):
             result = analyze_screenshot(shot["path"], ollama, max_tokens=vision_max_tokens)
             if result:
                 result["timestamp_seconds"] = shot["timestamp_seconds"]
                 kept.append(result)
-            print(f"[vision] {r.title}: frame {i}/{total} ({'kept' if result else 'skip'})", flush=True)
-        analyzed_shots[r.slug] = kept
-        print(f"[vision] {r.title}: {len(kept)}/{total} frame(s) kept overall")
+            print(f"[vision] {r.title}: frame {i}/{len(shots)} ({'kept' if result else 'skip'})", flush=True)
+        print(f"[vision] {r.title}: {len(kept)}/{len(shots)} frame(s) kept overall")
 
-    # Phase 4: generate notes per video (same gemma4:12b session, no model swap needed).
-    # Notes are built incrementally (small running doc + one segment at a time, see notes.py)
-    # and persisted to Notes/.cache/progress/<slug>/ after every step, so nothing depends on one
-    # big context window and progress survives even if a later segment fails. The real
-    # Notes/<slug>.md file is also rewritten after every segment (not just at the end) so it's
-    # visible and updating live if the user has it open.
-    for r in batch:
+        # Notes built incrementally (small running doc + one segment at a time, see notes.py),
+        # persisted to Notes/.cache/progress/<slug>/ after every step, and the real
+        # Notes/<slug>.md file is rewritten after every segment too (not just at the end) so
+        # it's visible and updating live if you have it open.
         print(f"[notes] generating for {r.title}")
         progress_dir = cache_dir(r.subject) / "progress" / r.slug
 
         def on_progress(running_text, done, r=r):
-            write_notes_file(r, transcripts[r.slug], running_text, done=done)
+            write_notes_file(r, segments, running_text, done=done)
 
         body = generate_lecture_notes(
-            transcripts[r.slug], analyzed_shots[r.slug], doc_indexes[r.subject],
+            segments, kept, doc_indexes[r.subject],
             ollama, config, r.title, r.subject, progress_dir=progress_dir, on_progress=on_progress,
         )
-        out_path = write_notes_file(r, transcripts[r.slug], body)
+        out_path = write_notes_file(r, segments, body)
         print(f"[notes] wrote {out_path.relative_to(REPO_ROOT)}")
 
-        # Rebuild + push after EVERY lecture (not just once at the end) so remote progress is
-        # checkable lecture-by-lecture, per explicit user request.
         rebuild_master(config)
         commit_and_push(
             ["codes", ".gitignore", config["paths"]["master_file"], f"{r.subject}/Notes"],
