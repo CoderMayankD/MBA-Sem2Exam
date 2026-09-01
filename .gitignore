@@ -1,0 +1,43 @@
+# ---- Videos (lecture recordings) — never pushed ----
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+*.m4v
+*.flv
+*.wmv
+Recordings/
+
+# ---- Extracted media / large intermediates ----
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+
+# ---- Python ----
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# ---- Local secrets ----
+.env
+.env.local
+
+# ---- Pipeline derived/intermediate cache (regenerable, not meant for remote viewing) ----
+.cache/
+shared/

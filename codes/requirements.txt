@@ -1,0 +1,9 @@
+faster-whisper
+imageio-ffmpeg
+requests
+pyyaml
+python-pptx
+pypdf
+python-docx
+openpyxl
+numpy

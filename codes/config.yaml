@@ -1,0 +1,50 @@
+# Central config for the lecture-notes pipeline. Edit here, not in the scripts.
+
+subjects:
+  - "Managerial Accounting"
+  - "Managing People and Organization"
+
+paths:
+  master_file: "MASTER.md"
+
+models:
+  whisper_model: "large-v3"
+  whisper_compute_type: "float16"      # falls back to int8 automatically if GPU/float16 init fails
+  llm_model: "gemma4:12b"              # multimodal: handles both screenshot vision and notes text generation
+  embed_model: "nomic-embed-text"
+  ollama_host: "http://127.0.0.1:11435"   # standalone Ollama v0.33.2 instance (see codes/README-ollama.md) — the system one on :11434 is an old v0.6.4 we couldn't update (no sudo access this session)
+  keep_alive: "20m"                    # how long Ollama keeps a model resident between calls in a phase
+  num_ctx: 24576                       # NOTE: tried 8192 to save time/VRAM, but the combined
+                                        # map+merge prompt (raw transcript + growing running doc +
+                                        # reference material, all in one call) needs more headroom
+                                        # than the old two-call design did — 8192 truncated 4 of 5
+                                        # segments mid-generation (confirmed via server log:
+                                        # "n_tokens = 8191, truncated = 1"), producing incomplete
+                                        # notes files with sections silently missing. 24576 is a
+                                        # safer margin; the real speed win here is fewer total LLM
+                                        # calls (fewer/bigger screenshots+segments), not smaller ctx.
+  vision_max_tokens: 500               # cap vision-analysis output — we need faithful table transcription, not prose; most of the wall-clock cost is generation time at ~65 tok/s
+
+screenshots:
+  scene_threshold: 0.05                # ffmpeg scene-change sensitivity, lower = more frames.
+                                        # Tested against a real screen-share lecture: 0.35 (a
+                                        # typical default for camera cuts) caught only 3 frames
+                                        # in 93 minutes and missed all the incremental Excel
+                                        # content-building; 0.05 caught 40 frames spread across
+                                        # the whole recording, including the actual worked table.
+  min_gap_seconds: 45                  # collapse frames closer together than this. Raised from 8s
+                                        # after real testing showed 8s let through near-duplicate
+                                        # screenshots of the same table mid-edit (e.g. 3 nearly
+                                        # identical frames 10-30s apart) — wasted vision calls on
+                                        # redundant content. 45s keeps genuinely distinct states.
+
+chunking:
+  chunk_target_minutes: 15             # rough transcript chunk size per notes segment. Raised from
+                                        # 9 after real testing (fewer, larger segments = fewer LLM
+                                        # calls per lecture without losing quality, now that a single
+                                        # combined prompt handles a whole segment in one call — see notes.py)
+  pause_split_seconds: 2.5             # prefer splitting chunks at gaps in speech at least this long
+
+retrieval:
+  top_k: 5                             # how many doc_index chunks to retrieve per transcript chunk
+  chunk_words: 400                     # size of chunks when indexing shared/ documents
