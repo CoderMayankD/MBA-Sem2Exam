@@ -1,0 +1,229 @@
+---
+title: Lecture 09 (2026-07-05)
+subject: Managerial Accounting
+source_video: Managerial Accounting (S2-25_MBACCZG502) - CA27BC59-Prof. Abhishek Sinha-20260705_132159-Meeting Recording.mp4
+duration_minutes: 117
+processed_on: 2026-09-02
+status: done
+---
+
+# Lecture 09 (2026-07-05)
+
+## Quick Summary
+- **Ratio Analysis**: A tool used for relative comparison of two quantities.
+- **Comparison Types**:
+    - **Internal (Temporal)**: Comparing a company's performance over different periods (past years).
+    - **External**: Comparing a company against competitors.
+- **Comparison Validity**: For external comparison to be valid, companies must have similar **Business Models** (similar revenue generation, expense structures, asset types, and financing methods).
+- **Liquidity Ratios**: Measure short-term survival; however, they can be misleading because certain assets "lock" cash.
+- **Profitability Ratios**: Measure the efficiency of earning profit, categorized into **Margin Ratios** (relative to sales) and **Return Ratios** (relative to investment/equity).
+- **Activity (Turnover) Ratios**: Measure the efficiency of using assets, receivables, or payables to generate revenue.
+- **Solvency Ratios**: Measure long-term survival and the ability to meet debt obligations (e.g., Debt-to-Equity, Interest Coverage).
+- **Valuation Ratios**: Measure what the market is willing to pay for a company's performance (e.g., Price-to-Earnings, Price-to-Book).
+- **Liquidity Hierarchy**: Three levels of liquid assets exist:
+    - **Current Assets**: All assets convertible to cash within one year.
+    - **Quick Assets**: Current assets excluding "locked" items like Inventory and Prepaid Expenses.
+    - **Absolute Liquid Assets**: Only those components that can be converted to cash immediately (Cash, Bank, and Short-term Investments).
+- **Retained Earnings**: Profits that are not distributed as dividends but are kept by the company; these are recorded in "Reserves and Surplus."
+- **Capital Employed**: The total amount of long-term funding available to a company, consisting of Debt, Equity, and Preference shares.
+- **Operating vs. Other Income**: 
+    - **Operating Income**: Income from segments where the company has strategic control (e.g., a subsidiary).
+    - **Other Income**: Income from non-strategic investments (e.g., government bonds, shares in unrelated companies).
+
+## Key Definitions
+- **Ratio**: A comparison of two quantities to provide a relative measurement.
+- **Liquidity**: The speed at which funds can be made available; primarily used to judge short-term survival.
+- **Business Model**: The way a company operates, including how it generates revenue, incurs expenses, the types of assets it uses, and how it finances those assets.
+- **Current Assets**: Assets convertible to cash within one year. 
+    - *Includes*: Cash in hand, Fixed Deposits (Short-term/Current Investments), Stock/Inventory, Debtors, Outstanding Income/Receivables, and Prepaid Expenses.
+- **Current Liabilities**: Liabilities to be paid within one year (e.g., Trade Payables, Short-term Loans, Outstanding expenses).
+- **EBIT**: Earnings Before Interest and Tax; the metric primarily relevant to debt holders as it shows the amount available to cover interest.
+- **PAT**: Profit After Tax; the metric primarily relevant to equity holders.
+- **Working Capital**: The relationship between current assets and current liabilities; negative working capital can occur in industries (like retail) that manage inventory/receivables efficiently.
+- **Stock/Inventory**: These terms are used interchangeably. "Stock" is common in Indian contexts, while "Inventory" is the standard term in the U.S.
+- **Bank Overdraft**: A short-term loan from a bank where the account holder can withdraw more than the balance; only available to those with current accounts.
+- **Short-term Investment**: Investments in money markets for a period of less than one year (e.g., Commercial Papers, Government Treasury Bills).
+- **Preference Shares**: Described as "Quasi-equity" because they have a fixed dividend like debt but do not grant the same legal recourse as debt (holders cannot go to court for non-payment).
+- **Accumulated/Cumulative Preference**: A situation where unpaid preference dividends are carried forward to the next period.
+- **Basic vs. Diluted Earnings**:
+    - **Basic**: Calculation based only on existing equity shares.
+    - **Diluted**: Calculation that assumes the conversion of potential equity instruments (convertible bonds, warrants) into shares.
+- **Reserves and Surplus**: Represents the "Retained Earnings" (profit not distributed as dividends) and other non-distributed portions of capital.
+- **Equity Shareholder's Fund**: The total equity available to shareholders, calculated as: **Equity Share Capital + Reserves and Surplus**.
+- **Capital Employed**: The sum of all long-term funding sources: **Debt + Equity + Preference**.
+- **Other Income**: Income generated from non-operational investment decisions (e.g., buying government bonds or shares of unrelated companies).
+- **Operating Income**: Income derived from core business operations or segments where the company maintains strategic control.
+- **Net Credit Sales**: Total sales made on credit (where payment is not received immediately), adjusted for sales returns.
+- **EBITDA**: Earnings Before Interest, Tax, Depreciation, and Amortization (calculated as $\text{EBIT} + \text{Depreciation} + \text{Amortization}$).
+
+## Worked Examples
+- **Return on Investment (ROI) Comparison Logic**:
+    - **Problem**: Profit (from the Statement of Profit and Loss) is a figure over a continuous period, while Investment (from the Balance Sheet) is a "point-in-time" figure.
+    - **Standard Solution**: To make the figures comparable, use the average of the investment: $\frac{\text{Opening Investment} + \text{Closing Investment}}{2}$.
+    - **The "Zero" Assumption Case**: If a closing investment is not available, some textbooks assume the closing investment is zero.
+    - **Calculation Comparison**:
+        - Scenario A: $\frac{\text{Profit}}{\text{Opening Investment}}$
+        - Scenario B: $\frac{\text{Profit}}{(\text{Opening} + 0) / 2}$
+    - **Reasoning**: In Scenario B, the denominator is halved. Since dividing by a smaller number results in a larger total, the ROI will "drastically increase" even though the actual return did not change. This highlights how specific assumptions in a formula can artificially inflate or deflate a result.
+- **Cash Conversion Calculation (Activity Ratios)**:
+    - **Purpose**: To determine how made-up/locked cash becomes usable cash.
+    - **Calculation**: $(\text{Accounts Receivable Days} + \text{Inventory Days}) - \text{Accounts Payable Days}$
+    - **Example**:
+        - Accounts Receivable: 30 days
+        - Inventory: 20 days
+        - Accounts Payable: 10 days
+        - **Calculation**: $(30 + 20) - 10 = 40$ days.
+    - **Reasoning**: Inventory and Receivables "lock" your cash for a duration; Payables "free" your cash for a duration. The net result is the actual time it takes to convert cash to cash.
+- **Profitability Hierarchy**:
+    - **Step 1**: Gross Profit
+    - **Step 2**: Operating Profit (EBIT)
+    - **Step 3**: EBT
+    - **Step 4**: PAT
+    - **Step 5**: EBITDA (included in the sequence of analysis)
+- **Earnings Per Share (EPS) Calculation**:
+    - **Basic EPS**: $\frac{\text{Net Profit} - \text{Preference Dividend}}{\text{Number of Equity Shares}}$
+    - **Diluted EPS**: Includes convertible bonds and warrants in the denominator (assuming conversion).
+    - **Reasoning**: Diluted EPS will always be lower than Basic EPS because the denominator is larger due to the assumption of conversion.
+- **Profitability Calculations (Step-by-Step)**:
+    - **Gross Profit**: $\text{Sales} - \text{COGS} - \text{Direct Expenses}$ (Note: Depending on the accounting style, Direct Expenses might be included within the COGS figure; the resulting Gross Profit remains the same).
+    - **Operating Profit**: $\text{Gross Profit} - \text{Operating Expenses}$.
+    - **EBIT**: $\text{Gross Profit} - \text{Operating Expenses}$ (or $\text{Sales} - \text{All Expenses except Interest and Tax}$).
+- **Liquidity Ratio Calculations**:
+    - **Current Ratio**: $\frac{\text{Current Assets}}{\text{Current Liabilities}}$
+    - **Quick Ratio**: $\frac{\text{Current Assets} - \text{Inventory} - \text{Prepaid Expenses}}{\text{Current Liabilities}}$
+    - **Absolute Liquid Ratio**: $\frac{\text{Cash} + \text{Bank} + \text{Short-term Investments}}{\text{Current Liabilities}}$
+- **Return on Capital Employed (ROCE)**:
+    - **Calculation**: $\frac{\text{EBIT}}{\text{Capital Employed}}$
+    - **Reasoning**: EBIT is the chosen numerator because it represents the profit available to all capital providers (debt and equity) before interest and tax are deducted.
+- **Interest Coverage Ratio**:
+    - **Calculation**: $\frac{\text{Operating Profit (EBIT)}}{\text{Interest Paid}}$
+    - **Analogy/Reasoning**: "Operating Profit is the umbrella." If the "umbrella" of operating profit is large enough to cover the "rain" of interest expenses, the company is safe.
+- **Debtors Turnover Ratio**:
+    - **Calculation**: $\frac{\text{Net Credit Sales}}{\text{Average Debtors}}$
+    - **Average Debtors Calculation**: $\frac{\text{Opening Debtors} + \text{Closing Debtors}}{2}$
+    - **Reasoning**: This measures how many times the credit sales are "covered" by the debtors. A higher number is preferred as it indicates faster collection.
+- **Average Collection Period (DSO)**:
+    - **Calculation**: $\frac{365}{\text{Debtors Turnover Ratio}}$
+    - **Variation**: Some texts use 360 instead of 365 (e.g., to assume no work on a few days or for easier calculation).
+    - **Comparison**: A lower number (e.g., 20 days vs. 35 days) is better as it indicates faster conversion of credit into cash.
+- **Profitability Ratios (Screenshot Content)**:
+    - **Return on Equity**: $\frac{\text{Net Profit after Taxes} - \text{Preference Dividend}}{\text{Equity Shareholder's_Funds}} \times 100$
+    - **Return on Investment / Return on Capital Employed**: $\frac{\text{Earnings before interest and Taxes}}{\text{Capital Employed}} \times 100$
+- **Debt-to-Equity Ratio**:
+    - **Calculation**: $\frac{\text{Debt}}{\text{Debt} + \text{Equity}}$
+    - **Note**: Use **Equity Shareholder's Fund** for the "Equity" component to maintain consistency.
+- **Debt Capital Ratio**:
+    - **Calculation**: $\frac{\text{Debt}}{\text{Total Debt} + \text{Equity}}$
+    - **Reasoning**: This shows the proportion of total debt in the total capital, which indicates financial risk/leverage.
+- **Creditors Turnover and Payment Period**:
+    - **Creditors Turnover Calculation**: $\frac{\text{Net Credit Purchases}}{\text{Average Payables}}$
+    - **Payment Period Calculation**: $\frac{360}{\text{Creditors Turnover}}$
+    - **Reasoning**: Unlike debtors, where a lower period is better, a **higher** payment period is better for the company. It means the company is taking more time to pay out cash, essentially using the supplier's credit to fund operations.
+- **Fixed Asset Turnover**:
+    - **Calculation**: $\frac{\text{Revenue from Operations (or Net Revenue)}}{\text{Net Fixed Assets}}$
+    - **Reasoning**: This measures if the fixed assets are generating enough revenue.
+- **Cost of Goods Sold (COGS) Calculation**:
+    - **Formula**: $(\text{Opening Stock} + \text{Net Purchases} + \text{Direct Expenses}) - \text{Closing Stock}$
+    - **Note**: For exam purposes, if Direct Expenses are provided, they should be added to the calculation of COGS.
+- **Gross Profit Ratio Calculation**:
+    - **Calculation**: $\frac{\text{Gross Profit}}{\text{Net Sales}} \times 100$
+    - **Logic**: If Sales are 12 lakhs and COGS (including direct expenses) is 8 lakhs, Gross Profit is 4 lakhs. Ratio is $4/12 = 33.33\%$.
+- **Operating Profit Ratio (EBIT Margin)**:
+    - **Calculation**: $\frac{\text{EBIT}}{\text{Sales}} \times 100$
+    - **Example**: If Sales are 100 and EBIT is 15, the ratio is 15%. This means for every 100 units sold, 15 units are operating profit.
+- **Net Profit Ratio**:
+    - **Calculation**: $\frac{\text{Net Profit}}{\text{Net Sales}} \times 100$
+    - **Note**: Net Profit is calculated as $\text{Sales} - \text{COGS} - \text{Operating Expenses} - \text{Interest} - \text{Tax}$.
+- **Reverse Calculation - Finding Current Assets**:
+    - **Problem**: Current Ratio is 2.5:1 and Current Liabilities are 4 lakhs.
+    - **Calculation**: $2.5 \times 4 = 10$ lakhs.
+    - **Reasoning**: Since $\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}}$, if the ratio is 2.5 and the denominator is 4, the numerator must be 10.
+- **Multi-Ratio Calculation (Combined Data)**:
+    - **Data**: Cash (1L), Debtors (4L), Inventory (5L), Prepaid (50k), Current Investment (1L). Current Liability (5L).
+    - **Current Ratio**: $(1+4+5+0.5+1) / 5 = 11.5 / 5 = 2.3$
+    - **Quick Ratio**: $(1+4+1) / 5 = 6 / 5 = 1.2$
+    - **Absolute Liquid Ratio**: $(1+1) / 5 = 2 / 5 = 0.4$
+    - **Reasoning**: This shows how different "layers" of liquidity are identified from the same data set by removing specific items.
+- **Liquidity Comparison (Inventory/Prepaid Assets)**:
+    - **Problem**: Two companies have identical Current Ratios (e.g., 2:1).
+    - **Case A**: Current Assets 30L, Inventory 18L, Prepaid 10k (reported as 1L in some contexts).
+    - **Case B**: Current Assets 24L, Inventory 5L, Prepaid 10k.
+    - **Result**: Company B has "better" liquidity.
+    - **Reasoning**: Company A has a large amount of "locked" assets (inventory and prepaid expenses). Even though the ratio is the same, the actual amount of liquid cash is significantly lower in Company A.
+- **The Manipulation Case (Liquidity vs. Cash)**:
+    - **Problem**: A company has Current Assets of 20 lakhs and Current Liabilities of 10 lakhs (Ratio of 2:1). Just before year-end, it uses 4 lakh cash to pay creditors.
+    - **Calculation**: New Current Assets = 16L, New Current Liabilities = 6L.
+    - **Result**: The ratio "improves" (becomes 2.66:1), but the actual liquidity/cash position has decreased.
+    - **Reasoning**: This is an example of how a ratio can be manipulated to look better on paper while the actual underlying health of the company (available cash) is declining.
+
+## Formulas & Rules
+- **ROI Formula**: $\frac{\text{Profit}}{\text{Investment}}$
+- **Average Investment**: $\frac{\text{Opening Investment} + \text{Closing Investment}}{2}$
+- **Relationship Rule**: 
+    - If the Numerator increases $\rightarrow$ Value increases.
+    - If the Denominator increases $\rightarrow$ Value decreases.
+- **Margin Ratio Formula**: $\frac{\text{Profit Measure (Gross, Operating, EBITDA, EBT, PAT)}}{\text{Total Sales}} \times 100$
+- **Return Ratio Formula**: $\frac{\text{Profit Measure (e.g., PAT)}}{\text{Investment Measure (e.g., Equity or Capital Employed)}}$
+- **ROCE Calculation**: $\frac{\text{Operating Profit (adjusted for tax if necessary)}}{\text{Equity} + \text{Debt}}$
+- **Average Rule for Cross-Statement Items**: When one figure is from the Profit & Loss (flow) and one is from the Balance Sheet (point-in-time), use the average of the Balance Sheet figure.
+- **Numerator/Denominator Rule for Activity**: In turnover ratios, Sales is in the numerator; in margin ratios, Sales is in the denominator.
+- **Gross Profit Ratio**: $\frac{\text{Gross Profit}}{\text{Net Sales}} \times 100$
+- **Operating Profit Ratio**: $\frac{\text{Operating Profit}}{\text{Net Sales}} \times 100$
+- **Net Profit Ratio**: $\frac{\text{Net Profit}}{\text{Net Sales}} \times 100$
+- **EBITDA Margin**: $\frac{\text{EBITDA}}{\text{Net Sales}} \times 100$
+- **Diluted EPS**: $\frac{\text{Net Profit} - \text{Preference Dividend}}{\text{Number of Equity Shares} + \text{Convertible Bonds/Warrants}}$
+- **Equity Shareholder's Fund**: $\text{Equity Share Capital} + \text{Reserves and Surplus}$
+- **Debtors Turnover Ratio**: $\frac{\text{Net Credit Sales}}{\text{Average Debtors}}$
+- **Average Collection Period (DSO)**: $\frac{365}{\text{Debtors Turnover Ratio}}$
+- **Debt-to-Equity Ratio**: $\frac{\text{Debt}}{\text{Debt} + \text{Equity}}$
+- **Debt Capital Ratio**: $\frac{\text{Debt}}{\text{Total Debt} + \text{Equity}}$
+- **Creditors Turnover Ratio**: $\frac{\text{Net Credit Purchases}}{\text{Average Payables}}$
+- **Payment Period**: $\frac{360}{\text{Creditors Turnover}}$
+- **Cost of Goods Sold (COGS)**: $\text{Opening Stock} + \text{Net Purchases} + \text{Direct Expenses} - \text{Closing Stock}$
+- **EBITDA**: $\text{EBIT} + \text{Depreciation} + \text{Amortization}$
+- **Fixed Asset Turnover**: $\frac{\text{Revenue from Operations}}{\text{Net Fixed Assets}}$
+
+## Tricky Logic & Traps
+- **Liquidity Fallacy**: A high Current Ratio (e.g., the "standard" 2:1) does not guarantee a company is liquid. If the current assets are tied up in **Inventory** or **Accounts Receivable**, the cash is "locked" and not immediately available for debt payments.
+- **No Universal Standard**: The 2:1 Current Ratio is a common textbook standard (ICAI/Indian textbooks), but in reality, there is no "ideal" ratio. It must be judged based on the specific **Industry**.
+- **Negative Working Capital**: A negative working capital (Current Liabilities > Current Assets) is not an automatic sign of failure. In some industries, it indicates the company manages inventory/receivables so efficiently that they can use "Accounts Payable" as a means of financing.
+- **Debt vs. Equity Perspectives**: 
+    - **Debt Holders** focus on **EBIT** because they are only concerned with the portion of profit available to pay interest.
+    - **Equity Holders** focus on **PAT** or dividends as they own the remainder of the company.
+- **Equity Dilution**: High equity can lead to ownership dilution; if a company gives away too much equity, it risks being taken over by third parties.
+- **Valuation Interpretation**: In ratios like Price-to-Earnings, "Earnings" is a measure of **performance**, while "Price" is what the market is **paying for that performance**.
+- **Asset Eligibility**: Not all Current Assets are equal. **Prepaid Expenses** and **Inventory** are "hard" assets because they cannot be easily converted back into cash to meet immediate obligations.
+- **Average Value Usage**: When calculating turnover for items that don't have a "credit sales" figure available in annual reports, use Total Sales divided by the average of the Balance Sheet figure (e.g., Average Accounts Receivable).
+- **Terminology Confusion**: **Stock** and **Inventory** are identical in meaning; the terminology varies by region (India vs. US).
+- **Bank Overdraft**: Unlike a standard savings account, a **Bank Overdraft** is a form of short-term credit available only to current account holders.
+- **Quasi-Equity**: **Preference Shares** are "quasi-equity" because they have fixed dividends like debt but lack the same legal protections.
+- **Cumulative Preference Trap**: If a company fails to pay a preference dividend, it becomes **Cumulative**. The next time they pay, they must pay the current dividend plus the missed amount (e.g., 8% becomes 16%).
+- **Diluted vs. Basic EPS**: Diluted EPS will **always** be lower than Basic because the denominator (total possible shares) is larger due to the inclusion of convertible instruments.
+- **Consistency in Denominators**: When calculating profit ratios (Gross, Operating, Net Profit), always use **Net Sales** as the denominator to ensure you are comparing the same base across all ratios.
+- **Direct Expense Variance**: Depending on the reporting style, **Direct Expenses** might be listed separately or included within the **COGS** figure. Regardless of the layout, the resulting Gross Profit remains the same for the calculation.
+- **"Other" vs. "Operating" Income Distinction**: This is a nuance of scope. If a company has **strategic control** over a subsidiary or investment, the income is **Operating**. If the investment is a generic vehicle like government bonds or shares in unrelated firms, it is **Other Income**.
+- **Consistency in Equity Calculation**: To maintain consistency across all ratios (like Debt-to-Equity and ROI), always use **Equity Shareholder's Fund** (which includes reserves/surplus) rather than just "Equity Share Capital."
+- **Debtors Turnover Interpretation**: While you want the **Debtors Turnover Ratio** to be as **high** as possible (more sales per unit of debt), you want the **Average Collection Period (DSO)** to be as **low** as possible (faster collection of cash).
+- **DSO Variability**: Different textbooks may use **360** instead of **365** as the denominator for the annual calculation, often for ease of calculation or to account for non-working days.
+- **Creditors vs. Debtors Logic**: Unlike debt collection (where you want to get paid fast), for your own creditors, you want to **delay** payment as long as possible. Therefore, a higher payment period (lower turnover) is "better" for the company's cash position.
+- **ROCE Selection Logic**: Use **Operating Profit (EBIT)** for ROCE instead of Net Profit because ROCE is intended to measure the return on the **firm's total assets/capital** before it is split between interest and taxes.
+- **Profit vs. Profitability**: Profit is a quantity; Profitability is a rate. Focus on the rate (Profitability) over the raw quantity (Profit).
+- **Productivity Analogy**: Profit is to Profitability what Production is to Productivity. Just as production is not as important as productivity, the rate of profit is the primary metric for success.
+- **Growth Correlation**: Profit must grow in proportion to sales. If sales grow but profit does not keep pace, the growth is not "clean" and may not translate into proportional cash growth.
+- **Intermediate Gap (Gross to Operating)**: If Gross Profit is high but Operating Profit is low, it signals a failure to control operating expenses (selling and administration).
+- **Cost Driver Identification**: Different industries have different primary cost drivers. Manufacturing firms are driven by **COGS** (raw materials, etc.). Service or SaaS companies (like Wipro or Infosys) may not have significant COGS as a primary driver.
+
+## Exam Pointers
+- **Calculating Gross Profit**: If the exam gives you "Cost of Goods Sold" and "Direct Expenses" separately, be careful. The instruction is to treat the provided COGS as the basis for Gross Profit calculation. If they provide "Opening Stock," "Net Purchases," and "Direct Expenses," use the formula: $(Opening + Purchases + Direct) - Closing = COGS$.
+- **Ratio Manipulation**: If you are asked to find a missing component (like Current Assets) when you have the ratio and the other component (Current Liabilities), multiply the liability by the ratio. Example: $Current Ratio (2.5) \times Current Liabilities (4) = Current Assets (10)$.
+- **Difference between Basic and Diluted**: Diluted is always lower because the denominator (number of shareholders) is larger due to the inclusion of convertible instruments like warrants and bonds.
+- **Liquidity Comparison Drill**: When comparing two companies with the same Current Ratio, check the "hidden" components. A company with significantly more inventory and prepaid expenses is less liquid because that capital is "locked."
+- **Growth Alignment Check**: When analyzing growth, ensure that profit is increasing at the same rate as sales. If sales grow 20% but profit only grows 10%, the profitability is decreasing despite the increase in total profit.
+
+## Sources
+- FMA-ratios -2026 jan to june (1).pptx
+- Statement of Profit and Loss and Balance Sheet.ppx
+- FMA-Class 2 -2026 accting eqn (3).ppx
+- Accounting Equations -solved and uploaded.xlsx
+- Advanced_Financial_Ratio_Analysis_20_Classroom_Problems_Solutions.docx
+- Financial_Ratio_Analysis_20_Practice_Questions_with_Solutions.docx
