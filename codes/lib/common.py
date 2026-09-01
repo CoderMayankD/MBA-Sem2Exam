@@ -82,6 +82,36 @@ class Ollama:
         resp.raise_for_status()
         return resp.json()["response"]
 
+    def unload_and_wait(self, timeout: float = 30) -> None:
+        """Force-evict the LLM and block until VRAM is actually freed. Needed because
+        keep_alive:0 on a normal generate call did NOT reliably free VRAM in time before the
+        next step (confirmed: faster-whisper hit CUDA OOM mid-batch while /api/ps still showed
+        gemma4:12b resident, well after the "evicting" call had returned) — sharing one 16GB
+        card between Ollama's LLM and whisper's batched decode needs an explicit, confirmed
+        handoff, not a fire-and-forget hint."""
+        import time
+
+        try:
+            requests.post(
+                f"{self.host}/api/generate",
+                json={"model": self.llm_model, "prompt": "", "keep_alive": 0},
+                timeout=30,
+            )
+        except requests.RequestException:
+            pass
+
+        deadline = time.time() + timeout
+        while time.time() < deadline:
+            try:
+                resp = requests.get(f"{self.host}/api/ps", timeout=5)
+                names = [m["name"] for m in resp.json().get("models", [])]
+                if self.llm_model not in names:
+                    return
+            except requests.RequestException:
+                pass
+            time.sleep(1)
+        print(f"[ollama] WARNING: {self.llm_model} still resident after {timeout}s unload wait — proceeding anyway")
+
     def embed(self, text: str) -> list[float]:
         resp = requests.post(
             f"{self.host}/api/embeddings",

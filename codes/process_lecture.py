@@ -133,6 +133,10 @@ def main():
     for r in batch:
         print(f"=== {r.subject} / {r.title} ===", flush=True)
 
+        # Free the LLM's VRAM before whisper's batched decode needs it — confirmed via a real
+        # crash (CUDA OOM) that relying on the notes phase's own keep_alive:0 wasn't enough; the
+        # 16GB card needs an explicit, *confirmed* handoff between whisper and gemma4:12b.
+        ollama.unload_and_wait()
         segments = transcribe_video(r.path, r.subject, config)
 
         shots_dir = notes_dir(r.subject) / r.slug
