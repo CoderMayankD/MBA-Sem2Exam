@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 
 import markdown
+from bs4 import BeautifulSoup
 from xhtml2pdf import pisa
 
 from lib.common import REPO_ROOT, subject_dir
@@ -20,13 +21,52 @@ h1 { font-size: 18pt; margin-bottom: 4pt; }
 h2 { font-size: 13pt; margin-top: 16pt; border-bottom: 0.5pt solid #ccc; }
 h3 { font-size: 11pt; margin-top: 10pt; }
 table { border-collapse: collapse; width: 100%; margin: 8pt 0; }
-td, th { border: 0.5pt solid #888; padding: 3pt 5pt; font-size: 8pt; }
+td, th { border: 0.5pt solid #888; padding: 3pt 5pt; font-size: 7.5pt; word-wrap: break-word; overflow-wrap: break-word; vertical-align: top; }
 code { background: #f2f2f2; }
 """
 
 
+def _equalize_table_columns(html_body: str) -> str:
+    """xhtml2pdf ignores CSS `table-layout: fixed` AND a <colgroup> with width styles (both
+    confirmed by direct visual test against a real rendered PDF — a long-text column just keeps
+    hogging the width regardless). What it does respect is an explicit `width` percentage on
+    every cell of the table. Set that on every <th>/<td>, not just the header row, since
+    xhtml2pdf's layout pass reads per-cell widths rather than a single column definition."""
+    soup = BeautifulSoup(html_body, "html.parser")
+    for table in soup.find_all("table"):
+        header_row = table.find("tr")
+        if not header_row:
+            continue
+        n_cols = len(header_row.find_all(["th", "td"]))
+        if n_cols == 0:
+            continue
+        width_pct = f"{100 / n_cols:.2f}%"
+        for row in table.find_all("tr"):
+            for cell in row.find_all(["th", "td"]):
+                cell["width"] = width_pct
+    return str(soup)
+
+
+def _fix_missing_blank_lines_before_tables(text: str) -> str:
+    """python-markdown's `tables` extension silently refuses to render a table (falls back to
+    plain text with literal pipe characters) unless it's preceded by a blank line. The notes
+    generator sometimes emits a table right after a bold label line with no blank line between
+    — confirmed in several real notes files. Insert the missing blank line mechanically rather
+    than regenerating notes (which would cost real LLM time for a pure formatting fix)."""
+    lines = text.split("\n")
+    fixed = []
+    for i, line in enumerate(lines):
+        is_table_row = line.startswith("|")
+        prev_is_blank_or_table = i == 0 or lines[i - 1].strip() == "" or lines[i - 1].startswith("|")
+        if is_table_row and not prev_is_blank_or_table:
+            fixed.append("")
+        fixed.append(line)
+    return "\n".join(fixed)
+
+
 def md_to_pdf(md_path: Path, pdf_path: Path) -> bool:
     text = md_path.read_text()
+    text = _fix_missing_blank_lines_before_tables(text)
 
     meta_line = ""
     fm_match = re.match(r"^---\n(.*?)\n---\n\n?", text, re.DOTALL)
@@ -42,6 +82,7 @@ def md_to_pdf(md_path: Path, pdf_path: Path) -> bool:
         text = text[fm_match.end():]
 
     html_body = markdown.markdown(text, extensions=["tables", "fenced_code"])
+    html_body = _equalize_table_columns(html_body)
     html = f'<html><head><meta charset="utf-8"><style>{CSS}</style></head><body>'
     if meta_line:
         html += f'<div class="meta">{meta_line}</div>'
