@@ -46,9 +46,4 @@ shared/
 *.png
 
 # ---- LinkedIn / promo assets (personal, not part of the pipeline) ----
-LINKEDIN-*
-Proof-of-Work-Carousel.pdf
-system-overview*.png
-pipeline-loop.*
-lecture-to-notes-story.*
-*.gif
+linkedin/
