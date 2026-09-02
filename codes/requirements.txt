@@ -9,3 +9,4 @@ openpyxl
 numpy
 markdown
 xhtml2pdf
+beautifulsoup4
