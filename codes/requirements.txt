@@ -10,3 +10,5 @@ numpy
 markdown
 xhtml2pdf
 beautifulsoup4
+flask
+rank_bm25
