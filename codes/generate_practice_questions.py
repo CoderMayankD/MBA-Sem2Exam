@@ -9,6 +9,7 @@
 Usage: ../.venv/bin/python3 generate_practice_questions.py "<Subject name>"
 """
 
+import re
 import sys
 from pathlib import Path
 
@@ -38,6 +39,18 @@ these notes — a judgment call or applied scenario, not a pure definition recal
 --- LECTURE NOTES ---
 {notes}
 """
+
+FIELD_LABELS = ["**Topic:**", "**Logic:**", "**Practice Question:**", "**Solution:**", "**Why:**"]
+
+
+def _add_blank_lines_between_fields(text: str) -> str:
+    """The model outputs the 5 fields separated by single newlines (or even no newline at all),
+    which Markdown collapses into one run-on paragraph — confirmed visually on a real rendered
+    PDF. Force a blank line before each field label."""
+    for label in FIELD_LABELS:
+        text = re.sub(r"\s*" + re.escape(label), "\n\n" + label, text)
+    return text.strip()
+
 
 KEYWORDS = ["question", "practice", "problem", "solution", "case study", "sample paper", "midsem"]
 
@@ -91,8 +104,8 @@ def main():
             continue
         notes_text = notes_path.read_text()
         prompt = PROMPT.format(subject=subject, notes=notes_text[:6000])
-        result = ollama.generate(prompt, evict=False)
-        lecture_sections.append(f"## Lecture {r.lecture_num:02d} ({r.date_str})\n\n{result.strip()}\n")
+        result = _add_blank_lines_between_fields(ollama.generate(prompt, evict=False))
+        lecture_sections.append(f"## Lecture {r.lecture_num:02d} ({r.date_str})\n\n{result}\n")
         print(f"  Lecture {r.lecture_num:02d} done", flush=True)
     ollama.unload_and_wait()
 

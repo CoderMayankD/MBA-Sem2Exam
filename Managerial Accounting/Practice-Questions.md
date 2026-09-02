@@ -7,89 +7,129 @@ _Part 1 is auto-generated per lecture (quick recap + one exam-style question tes
 ## Lecture 01 (2026-04-26)
 
 **Topic:** Research vs. Development Distinction
+
 **Logic:** Research is treated as a cost center because it lacks a guaranteed future benefit, while Development is treated as an asset because it is close to finding a solution and has a clear future benefit.
+
 **Practice Question:** A company spends $200,000 on a project with no guaranteed future benefit and $100,000 on a project that is close to finding a solution and has a clear future benefit. Classify each expenditure as a "cost center" or an "asset."
+
 **Solution:** $200,000 is a cost center; $100,000 is an asset.
+
 **Why:** This tests the "guaranteed future benefit" distinction for classification.
 
 ## Lecture 02 (2026-05-03)
 
 **Topic:** Asset vs. Liability Identification
+
 **Logic:** Stand at a point in time and look forward: if a resource provides a "future benefit," it is an Asset; if it creates a "future obligation," it is a Liability.
+
 **Practice Question:** A company receives $10,000 from a student for a course to be taught next semester. The company also provides a $5,000 loan to a supplier. Classify both items as either an Asset or a Liability.
+
 **Solution:** 1. Student payment: Liability (it is "pre-received income" which represents a "future obligation" to provide service). 2. Loan to supplier: Asset (it is a "loan given" which provides a "future benefit").
+
 **Why:** This tests the "future benefit" vs. "future obligation" rule applied to "pre-received income" and "loans given."
 
 ## Lecture 03 (2026-05-10)
 
 **Topic:** Capital Lease and Goodwill Valuation
+
 **Logic:** For a capital lease, the Lease Liability is recorded as the book value of the asset, not the amount of the rent paid. Goodwill is calculated as the purchase price minus the fair value of the company at the time of acquisition.
+
 **Practice Question:** A company enters into a capital lease for a piece of land with a book value of 500 units; the annual rent for the lease is 50 units. In a separate transaction, the company acquires a neighboring business with a fair value of 1,000 units for a total purchase price of 1,200 units. Calculate the Lease Liability and the Goodwill.
+
 **Solution:** 
 1. Lease Liability: 500 (The liability equals the book value of the asset, not the rent amount).
 2. Goodwill: 200 (1,200 purchase price - 1,000 fair value).
+
 **Why:** This tests the distinction between rent payments and asset book value in lease accounting, and the specific "premium over fair value" calculation for goodwill.
 
 ## Lecture 04 (2026-05-17)
 
 **Topic:** Prepaid Interest vs. Expense Classification
+
 **Logic:** If the "time to pay" (the period it applies to) has not yet arrived, the payment is a future benefit and is classified as an asset; if the benefit is "used" in the current period, it is an expense.
+
 **Practice Question:** A company pays 8,000 for interest where the "time to pay" has not arrived. In the following period, this interest is "used" in the current period. Classify both transactions.
+
 **Solution:** 1. Payment where time has not arrived: Asset (Prepaid Interest). 2. Amount used in current period: Expense (Interest Expense).
+
 **Why:** This tests the "timing" rule to distinguish between a future benefit (Asset) and a consumed benefit (Expense).
 
 ## Lecture 05 (2026-05-24)
 
 **Topic:** Rent Classification and Expense Rules
+
 **Logic:** Assets and expenses are on the LHS, while liabilities and income are on the RHS. "Rent Outstanding" is a liability (RHS); because it was already recognized as an expense in a prior period, its payment is not recorded as an expense in the current period.
+
 **Practice Question:** A company pays ₹5,000 for "Rent Outstanding" from the previous year. How is this transaction recorded, and is it recorded as an expense?
+
 **Solution:** Debit: Rent Outstanding (₹5,000); Credit: Cash (₹5,000). It is not recorded as an expense because it was already recognized as an expense in a prior period.
+
 **Why:** This tests the distinction between a liability reduction and a current-period expense.
 
 ## Lecture 06 (2026-05-31)
 
 **Topic:** Journal Entry Classification and Specific Account Usage
+
 **Logic:** Assets are recorded on the Left-Hand Side (LHS) and increase on Debit; Liabilities and Equity are on the Right-Hand Side (RHS) and increase on Credit. Specific terms must be used: "Drawings" for personal withdrawals (rather than "Capital") and "Machinery" for tangible assets (rather than "Purchase").
+
 **Practice Question:** An owner withdraws ₹10,000 for personal use, and the company purchases a piece of machinery for ₹30,000. Provide the correct Debit and Credit entries for both transactions.
+
 **Solution:** 
 1. Withdrawal: Debit: Drawing account Dr. 10,000; Credit: To Bank account 10,000
 2. Machinery: Debit: Machinery account Dr. 30,000; Credit: To Bank account 30,000
+
 **Why:** This tests the requirement to use specific names for personal withdrawals ("Drawings") and tangible assets ("Machinery") rather than generic terms.
 
 ## Lecture 07 (2026-06-07)
 
 **Topic:** Profit and Loss Item Classification
+
 **Logic:** Dividends are not an expense; they are a "sharing of profit" or an appropriation of profit. Pre-received income is classified as a liability because it represents a "future obligation."
+
 **Practice Question:** A company receives \$10,000 in dividends and \$5,000 in "pre-received income." Classify each as Income, Expense, or Liability.
+
 **Solution:** Dividend: Income. Pre-received Income: Liability.
+
 **Why:** This tests the "tricky" distinction between appropriations of profit and future obligations.
 
 ## Lecture 08 (2026-06-14)
 
 **Topic:** Prepaid and Outstanding Expense Adjustments
+
 **Logic:** Prepaid expenses are not "current" expenses and must be removed from the current period's expense and recorded as an asset. Outstanding expenses have occurred but are not yet paid; they must be included in the current period's costs (reducing profit) and recorded as a liability.
+
 **Practice Question:** A company has a reported expense of 10,000 for Rent, of which 4,000 is Prepaid. There is also an Outstanding Salary of 3,000. Calculate the amount to be included in the current period's costs and identify the Asset and Liability values.
+
 **Solution:** Current period's costs: 9,000 (10,000 - 4,000 + 3,000); Asset: 4,000; Liability: 3,000.
+
 **Why:** This tests the distinction between items that are not "current" expenses (prepaid) and items that have occurred but are not yet paid (outstanding).
 
 ## Lecture 09 (2026-07-05)
 
 **Topic:** Return on Investment (ROI) Calculation
+
 **Logic:** Profit is a figure recorded over a continuous period, while Investment is a "point-in-time" figure from the Balance Sheet. To make these quantities comparable for a ratio, the "Standard Solution" is to use the average of the investment: (Opening Investment + Closing Investment) / 2.
+
 **Practice Question:** A company reports a Profit of $100,000 for the fiscal year. The investment at the start of the period was $1,000,000 and the investment at the end of the period was $1,200,000. Calculate the Return on Investment (ROI).
+
 **Solution:**
 1. Calculate the average investment: $(\$1,000,000 + \$1,200,000) / 2 = \$1,100,000$.
 2. Calculate the ROI: $(\$100,000 / \$1,100,000) \times 100 = 9.09\%$.
+
 **Why:** This tests the "Standard Solution" for resolving the comparison mismatch between period-based profit and point-in-time investment figures.
 
 ## Lecture 10 (2026-07-12)
 
 **Topic:** Diluted Earnings Per Share (EPS)
+
 **Logic:** Basic EPS is calculated using current equity shares, whereas Diluted EPS is a more conservative measure because it includes all shares that can be converted into equity in the future, such as convertible bonds, warrants, options, and ESOPs.
+
 **Practice Question:** A company reports a Net Profit of $1,000,000 and pays $100,000 in preference dividends. There are 100,000 current equity shares. Additionally, the company has convertible bonds and warrants that could be converted into 20,000 additional shares. Calculate both the Basic EPS and the Diluted EPS.
+
 **Solution:**
 Basic EPS: ($1,000,000 - $100,000) / 100,000 = $9.00
 Diluted EPS: ($1,000,000 - $100,000) / (100,000 + 20,000) = $7.50
+
 **Why:** This question tests the requirement to include potential equity-convertible instruments (convertible bonds, warrants) in the denominator to provide a more conservative Diluted EPS.
 
 ## Lecture 11 (2026-07-19)
@@ -107,41 +147,57 @@ Diluted EPS: ($1,000,000 - $100,000) / (100,000 + 20,000) = $7.50
 ## Lecture 12 (2026-07-26)
 
 **Topic:** CVP Analysis and Break-Even Point
+
 **Logic:** Contribution margin is the amount remaining from sales revenue after variable costs are deducted. To find how many more units must be sold to cover fixed costs, divide the total fixed costs by the contribution margin per unit and subtract the number of units already sold.
+
 **Practice Question:** A company currently sells 8,000 units and has a loss of 7,000. The fixed costs are 35,000 and the contribution margin per unit is 3.50. How many more units must be sold to cover the fixed costs?
+
 **Solution:** 
 1. Calculate total units needed to cover fixed costs: 35,000 / 3.50 = 10,000 total units.
 2. Calculate additional units: 10,000 - 8,000 = 2,000 units.
+
 **Why:** This tests the calculation of "additional" units required to reach the break-even point rather than just the total number of units.
 
 ## Lecture 13 (2026-08-02)
 
 **Topic:** Drop Product Decision Analysis
+
 **Logic:** A decision to drop a product must be based on the impact on the contribution to the company's profit. If the reduction in fixed costs is less than the loss in contribution margin from dropping the product, the product should not be dropped.
+
 **Practice Question:** A company is considering dropping its "Mud and Snow" tire line. 
 - With the line: Sales = $180,000; Fixed Overhead = $30,000; Contribution Margin = $7,000.
 - Without the line: Sales = $155,000; Fixed Overhead = $28,000; Contribution Margin = $5,000.
 Should the company drop the product?
+
 **Solution:** No. By dropping the product, sales drop by $25,000, but fixed costs only decrease by $2,000; therefore, the contribution to the company's profit would drop from $7,000 to $5,000.
+
 **Why:** This tests the ability to identify the "gap" between the loss in contribution and the reduction in fixed costs.
 
 ## Lecture 14 (2026-08-09)
 
 **Topic:** Margin of Safety (MoS) and Profit Calculation
+
 **Logic:** The Margin of Safety (MoS) is the amount of sales that exceeds the break-even point. Since only this "extra" amount sold beyond break-even contributes to profit, profit is calculated by multiplying the MoS by the Profit Volume (P/V) ratio.
+
 **Practice Question:** A company records a Margin of Safety (MoS) of 100,000 and a Profit Volume (P/V) Ratio of 40%. Calculate the profit.
+
 **Solution:** $100,000 \times 0.40 = 40,000$
+
 **Why:** This tests the specific logic that only the portion of sales exceeding the break-even point (the "extra" amount) contributes to profit.
 
 ## Lecture 15 (2026-08-23)
 
 **Topic:** Standard Costing: Material and Labor Variances
+
 **Logic:** Standard Costing compares actual costs against predetermined "standards" to determine if a project is being performed well. By breaking total costs into components—such as Price/Usage for materials or Rate/Efficiency for labor—management can identify if a variance is caused by the price paid or the quantity used.
+
 **Practice Question:** A company has a Standard Quantity (SQ) of 2,500 kg at a Standard Price (SP) of $12/kg. The Actual Quantity (AQ) used was 2,200 kg at an Actual Price (AP) of $13/kg. Calculate the Material Cost Variance (MCV), Material Price Variance (MPV), and Material Usage Variance (MUV). State if each is Favorable (F) or Adverse (A).
+
 **Solution:** 
 1. **MCV**: $(2,500 \times 12) - (2,200 \times 13) = 30,000 - 28,600 = 1,400$ (F)
 2. **MPV**: $2,200 \times (12 - 13) = -2,200$ (A)
 3. **MUV**: $12 \times (2,500 - 2,200) = 3,600$ (F)
+
 **Why:** This tests the ability to distinguish between price and usage as independent components of the total variance.
 
 ## Lecture 16 (2026-08-30)

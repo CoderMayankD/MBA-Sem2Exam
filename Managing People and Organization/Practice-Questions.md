@@ -7,151 +7,223 @@ _Part 1 is auto-generated per lecture (quick recap + one exam-style question tes
 ## Lecture 01 (2026-07-04)
 
 **Topic:** Lecture 01
+
 **Logic:** No speech was detected in the recording.
+
 **Practice Question:** Based on the provided notes, what content was captured in the recording?
+
 **Solution:** No speech was detected.
+
 **Why:** This tests the fact that no speech was detected in the recording.
 
 ## Lecture 02 (2026-07-04)
 
 **Topic:** Lecture 02 (No content)
+
 **Logic:** No content provided.
+
 **Practice Question:** No question can be generated because no concepts, rules, or scenarios are present in the provided notes.
+
 **Solution:** N/A
+
 **Why:** The source notes contain no educational content.
 
 ## Lecture 03 (2026-07-04)
 
 **Topic:** Lecture 03 (Managing People and Organization)
+
 **Logic:** No speech was detected in this recording.
+
 **Practice Question:** N/A
+
 **Solution:** N/A
+
 **Why:** N/A
 
 ## Lecture 04 (2026-07-04)
 
 **Topic:** Group Behavior and Conformity
+
 **Logic:** Conformity is distinguished by the individual's motivation: Informational Conformity is a belief-based shift where the individual is convinced the group is correct, whereas Normative Conformity is a fear-based shift where the individual conforms to avoid being seen as a "deviant" or "outlier."
+
 **Practice Question:** During a group discussion, a team member realizes the group's consensus is incorrect but agrees with the group's decision specifically to avoid being seen as a "deviant" or "outlier." Identify the type of conformity.
+
 **Solution:** Normative Conformity.
+
 **Why:** This tests the distinction between belief-based shift (Informational) and fear-based behavior adjustment to avoid disapproval (Normative).
 
 ## Lecture 05 (2026-07-05)
 
 **Topic:** Work Groups vs. Work Teams
+
 **Logic:** A "team" is defined by "collective performance" and "positive" synergy, whereas a "group" focuses on "sharing information" with "neutral or negative" synergy. The key distinction is that "teams" involve "mutual" accountability, while "groups" have only "individual" accountability.
+
 **Practice Question:** An organization is evaluating two units: Unit A, where members share information and are held individually accountable; and Unit B, where members work for collective performance and are held both individually and mutually accountable. Which unit is a "team"?
+
 **Solution:** Unit B is the team because it targets "collective performance" and utilizes "mutual" accountability.
+
 **Why:** This tests the "Accountability Distinction" and "Synergy as a Differentiator" traps.
 
 ## Lecture 06 (2026-07-05)
 
 **Topic:** Motivation and Reward Systems
+
 **Logic:** Extrinsic rewards can ensure "compliance" (doing the task because it is rewarded) but do not necessarily buy "engagement" (personal commitment); specifically, rewards can "punish" "intrinsic motivation" by making the individual only want to perform the task for the reward.
+
 **Practice Question:** A manager offers a cash bonus to a staff member who previously showed great personal interest and high levels of "intrinsic motivation" for a project. After the bonus is implemented, the staff member completes the task perfectly but no longer shows any personal commitment to the work or any interest in the project's outcome. Based on the notes, what occurred?
+
 **Solution:** The reward bought "compliance" but failed to provide "engagement" because the extrinsic reward "punished" the staff member's "intrinsic motivation."
+
 **Why:** This tests the distinction between "compliance" and "engagement" when using extrinsic rewards.
 
 ## Lecture 07 (2026-07-05)
 
 **Topic:** Team Success Factors
+
 **Logic:** **Psychological Safety** is a significant driver of success because it provides a climate where members feel safe to speak up, admit mistakes, and show their "true" selves; it is considered a more significant driver of success than individual ability or personality.
+
 **Practice Question:** A manager is forming a new team and must choose between a group of individuals with high "individual ability" and a group of individuals who operate in an environment of "Psychological Safety" (where they feel safe to speak up, admit mistakes, and show their "true" selves). Based on the notes, which factor is a more significant driver of success?
+
 **Solution:** The group with **Psychological Safety** is the more significant driver of success.
+
 **Why:** This tests the specific rule that Psychological Safety outweighs individual ability or personality.
 
 ## Lecture 08 (2026-07-12)
 
 **Topic:** Leadership vs. Management (HBR 2004 Framework)
+
 **Logic:** Managers are characterized by an impersonal/passive attitude toward goals, a focus on process, and a tendency to avoid risk. Leaders are characterized by a personal/active attitude, a focus on events/decisions, and a willingness to take risks to alter human and economic relationships.
+
 **Practice Question:** A department head is tasked with developing a fresh approach that involves taking a risk to fundamentally alter human and economic relationships within the firm. Based on the H.B.R. 2004 framework, is this a management task or a leadership task?
+
 **Solution:** Leadership. Leaders are characterized by a personal/active attitude, focus on events/decisions, and a willingness to take risks; managers are characterized by an impersonal/passive attitude, a focus on process, and a tendency to avoid risk.
+
 **Why:** This tests the distinction between management's focus on process/risk-avoidance and leadership's focus on events/risk-taking.
 
 ## Lecture 09 (2026-07-12)
 
 **Topic:** Evaluation of Persuasion
+
 **Logic:** Automatic processing is fast, emotional, and easily swayed by aesthetics (jingles, photos). Controlled processing is slower, logic-based, and harder to sway because it relies on facts, figures, and logic.
+
 **Practice Question:** A communication uses a catchy jingle and photos; a second communication uses facts, figures, and logic. Which communication uses Controlled Processing?
+
 **Solution:** The second communication.
+
 **Why:** This tests the distinction between automatic (aesthetic-based) and controlled (fact-based) processing.
 
 ## Lecture 10 (2026-07-19)
 
 **Topic:** Lecture 10 (2026-07-19)
+
 **Logic:** No speech detected.
+
 **Practice Question:** No speech detected.
+
 **Solution:** No speech detected.
+
 **Why:** No speech detected.
 
 ## Lecture 11 (2026-07-19)
 
 **Topic:** Lecture 11 (Managing People and Organization)
+
 **Logic:** No speech was detected in the recording.
+
 **Practice Question:** Based on the "Quick Summary" provided in the notes, what was the content of the recorded session?
+
 **Solution:** No speech was detected.
+
 **Why:** This tests the fact that the recording contains no speech.
 
 ## Lecture 12 (2026-07-19)
 
 **Topic:** Lecture 12
+
 **Logic:** No speech was detected in the recording, meaning no content was provided.
+
 **Practice Question:** Based on the provided notes, what specific management techniques or organizational concepts were discussed in this lecture?
+
 **Solution:** None. The notes state that no speech was detected.
+
 **Why:** This tests the student's ability to strictly adhere to the provided source material and avoid using outside information.
 
 ## Lecture 13 (2026-07-19)
 
 **Topic:** Organizational Points of View
+
 **Logic:** A Bureaucrat's Point of View is characterized by a lack of ownership, authority, or approval. In contrast, an Administrator's Point of View is characterized by a focus on rule books and past precedent.
+
 **Practice Question:** An employee refuses to implement a new project, stating, "The rule book does not allow for this change." Which Point of View is this employee demonstrating?
+
 **Solution:**
 1. Identify the "rule book" keyword in the statement.
 2. Match this to the Administrator's Point of View.
+
 **Why:** This tests the distinction between the Administrator (rule books) and the Bureaucrat (lack of ownership, authority, or approval).
 
 ## Lecture 14 (2026-07-19)
 
 **Topic:** Leadership Communication Dynamics
+
 **Logic:** "Restricting" is an active closing of dialogue by the leader. "Not inviting" is a failure to create a space where members feel they can contribute.
+
 **Practice Question:** A manager observes that team members are silent during a meeting. The manager is not actively closing the dialogue, but has failed to create a space where members feel they can contribute. Is this "restricting" or "not inviting"?
+
 **Solution:** Not inviting.
+
 **Why:** This tests the distinction between an active closing of dialogue (restricting) and a failure to create a space for contribution (not inviting).
 
 ## Lecture 15 (2026-07-26)
 
 **Topic:** Organizational Culture: Tangible vs. Invisible Factors
+
 **Logic:** Culture is composed of "Tangible" factors (visible elements such as dress codes and amenities) and "Invisible" factors (not visible to the naked eye but felt or observed over time, such as trust and core values).
+
 **Practice Question:** A CEO provides a handwritten thank-you note to an employee for an outstanding contribution. Is this a "Tangible" or "Invisible" factor?
+
 **Solution:** Tangible. It is a "tangible gesture."
+
 **Why:** This tests the identification of "Tangible" vs. "Invisible" factors.
 
 ## Lecture 16 (2026-08-01)
 
 **Topic:** Boundary Spanning
+
 **Logic:** External boundary spanning (interaction with outside entities) is only most effective when it is followed up by internal boundary spanning (communication across internal departments).
+
 **Practice Question:** A company forms a team to manage relationships with outside suppliers and government agencies. To ensure this initiative is most effective, what must the company also require of the team?
 A) Higher work specialization
 B) Internal boundary spanning
 C) Higher formalization
 D) A larger span of control
+
 **Solution:** Identify the team’s role as "external boundary spanning" (interaction with outside entities) and apply the "Synergy Rule," which states that external boundary spanning is most effective when followed up by internal boundary spanning.
+
 **Why:** This tests the "Synergy Rule" which requires internal boundary spanning to maximize the effectiveness of external boundary spanning.
 
 ## Lecture 17 (2026-08-02)
 
 **Topic:** Selection and Interviewer Bias
+
 **Logic:** Selection is the process of differentiating between applicants by filtering out those who do not meet "checkmarks" (requisite qualifications and competence). To ensure accuracy, interviewers must avoid "snap judgments" and the "Halo effect," where one specific trait or job-related attribute influences the evaluation of all other qualities of an applicant.
+
 **Practice Question:** An interviewer is evaluating a candidate for a role requiring "organizational fit." The candidate is exceptionally charismatic and well-spoken during the first five minutes of the interview. The interviewer immediately concludes that the candidate also possesses high technical proficiency and strong logic. Based on the "Common Interview Problems" listed in the notes, which specific bias is the interviewer committing?
+
 **Solution:** The interviewer is succumbing to the "Halo effect," where one trait or job-related attribute influences the evaluation of the remaining qualities of an applicant.
+
 **Why:** This tests the ability to identify a specific interview bias (the "Halo effect") rather than just identifying the type of interview.
 
 ## Lecture 18 (2026-08-02)
 
 **Topic:** Organizational Culture
+
 **Logic:** A Strong Culture is defined by values that are widely shared and where employees have a strong identification with the culture and its history; a Weak Culture is defined by values limited to a few people (top management) and little employee identification.
+
 **Practice Question:** A company maintains a consistent brand image, but its core values are only known by the executive team, and most employees are unable to tell stories about the company's history or heroes. Is this a Strong or Weak Culture?
+
 **Solution:** Weak Culture. The notes state that a Weak Culture has values limited to few people (top management), little knowledge of company history or heroes, and little identification with the culture.
+
 **Why:** This tests the requirement for internal shared knowledge and identification as opposed to external brand consistency.
 
 ## Lecture 19 (2026-08-09)
@@ -169,41 +241,61 @@ D) A larger span of control
 ## Lecture 20 (2026-08-09)
 
 **Topic:** Organizational Citizenship Behavior (OCB)
+
 **Logic:** OCB is defined as voluntary behaviors that benefit the organization. However, OCB is not expected from employees in high-stress or bad-management environments.
+
 **Practice Question:** In a department where the manager practices a micromanagement style and there is a lack of transparency, should management expect employees to demonstrate Organizational Citizenship Behavior (OCB)?
+
 **Solution:** No, because OCB is not expected from employees in high-stress or bad-management environments.
+
 **Why:** This tests the specific exclusion of OCB in high-stress or poorly managed environments.
 
 ## Lecture 21 (2026-08-22)
 
 **Topic:** Selection Risks and Errors
+
 **Logic:** Selection is the process of finding the "best suitable" candidate by differentiating between applicants. The primary risk to be minimized is the "Acceptance Error" (hiring a candidate who ultimately fails), whereas a "Reject Error" represents a "missed opportunity" (rejecting a high-potential, capable candidate).
+
 **Practice Question:** An organization is reviewing two candidates during the selection process. Candidate A is a mediocre performer who is hired, and Candidate B is a high-potential, capable candidate who is mistakenly not selected. Identify the specific "selection mistake" for each candidate.
+
 **Solution:** 1. Candidate A represents an "Acceptance Error" (the "primary risk"). 2. Candidate B represents a "Reject Error" (a "missed opportunity").
+
 **Why:** This tests the distinction between the primary risk of a selection error (hiring a failure) and the secondary risk of a rejected opportunity.
 
 ## Lecture 22 (2026-08-23)
 
 **Topic:** Internal Equity and Pay Structure
+
 **Logic:** Internal equity ensures fairness in pay across different roles and levels within the same organization. A lack of formal salary bands and individual negotiation leads to pay inequity.
+
 **Practice Question:** At TechNova, a senior employee (Priya) discovers a new hire (Arjun) earns 25% more for similar skills because decisions were made individually without formal salary bands. Based on the notes, what specific compensation management issues are present?
+
 **Solution:** 1. Pay inequity (lack of internal equity). 2. Absence of formal salary bands.
+
 **Why:** This tests the application of "internal equity" and "salary bands" to the specific conflict in the TechNova case.
 
 ## Lecture 23 (2026-08-30)
 
 **Topic:** Performance Appraisal vs. Performance Management and Rating Biases
+
 **Logic:** Performance Management is a multi-pronged, collaborative, and forward-looking system including "outputs and being," while Performance Appraisal is a retrospective, individual-focused assessment. Raters must distinguish between specific biases such as "Status Effect" (underrating roles perceived as "lesser") and "Spillover" (past ratings influencing the current year's data).
+
 **Practice Question:** A manager evaluates two staff members: a data entry clerk and a supervisor. The manager rates the clerk as "average" because the role is perceived as "lesser" (despite the clerk's performance), and the manager rates the supervisor as "high" based on a project completed during the previous year. Identify the two specific types of bias occurring in these assessments.
+
 **Solution:** 1. Data entry clerk: **Status Effect** (underrating a role perceived as "lesser"). 2. Supervisor: **Spillover Effect** (past performance ratings influencing current year's data).
+
 **Why:** This tests the ability to differentiate between a bias based on a worker's position (Status) versus a bias based on historical data (Spillover).
 
 ## Lecture 24 (2026-08-30)
 
 **Topic:** Performance Appraisal Methods
+
 **Logic:** The Checklist Method is "easy to use" and "low cost," but it is highly susceptible to "Subjectivity" and the "Halo Effect," where a single recent observation or a specific trait can disproportionately influence the rater's perception of the entire role. In contrast, the Behaviorally Anchored Rating Scale (BARS) provides a clearer "anchor" for the rater by using a range of descriptive statements of behavior.
+
 **Practice Question:** A manager uses a "Yes/No" checklist to evaluate a subordinate. Because the subordinate recently completed one high-priority project successfully, the manager gives them high marks across all categories—including "keeping temper" and "obeying orders"—even though the manager has no specific data on those behaviors. Identify the specific risk the manager is falling into and name the appraisal method that uses a range of descriptive statements of behavior to provide a clearer "anchor" for the rater.
+
 **Solution:** 1. The manager is falling into the **Halo Effect**, where a single recent observation or specific trait disproportionately influences the rater's perception of the entire role. 2. The manager should use the **Behaviorally Anchored Rating Scale (BARS)** to provide a clearer "anchor."
+
 **Why:** This tests the identification of the "Halo Effect" risk associated with the Checklist Method versus the "anchored" approach of BARS.
 
 ## Part 2: Existing Course Materials (from shared/)
