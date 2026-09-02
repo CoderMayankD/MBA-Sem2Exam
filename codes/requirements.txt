@@ -7,3 +7,5 @@ pypdf
 python-docx
 openpyxl
 numpy
+markdown
+xhtml2pdf
