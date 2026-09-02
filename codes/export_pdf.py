@@ -14,8 +14,17 @@ from xhtml2pdf import pisa
 
 from lib.common import REPO_ROOT, subject_dir
 
-CSS = """
-body { font-family: Helvetica; font-size: 10pt; line-height: 1.4; }
+DEJAVU_DIR = "/usr/share/fonts/truetype/dejavu"
+
+# DejaVu Sans, not the default Helvetica, because Helvetica has no glyph for the Rupee sign
+# (confirmed: ₹ rendered as a black missing-glyph box in a real PDF) — DejaVu covers it.
+FONT_FACES = (
+    "@font-face { font-family: DejaVuSans; src: url(" + DEJAVU_DIR + "/DejaVuSans.ttf); }\n"
+    "@font-face { font-family: DejaVuSans; font-weight: bold; src: url(" + DEJAVU_DIR + "/DejaVuSans-Bold.ttf); }\n"
+)
+
+CSS = FONT_FACES + """
+body { font-family: DejaVuSans; font-size: 10pt; line-height: 1.4; }
 h1 { font-size: 18pt; margin-bottom: 4pt; }
 .meta { color: #555; font-size: 9pt; margin-bottom: 14pt; border-bottom: 0.5pt solid #ccc; padding-bottom: 8pt; }
 h2 { font-size: 13pt; margin-top: 16pt; border-bottom: 0.5pt solid #ccc; }

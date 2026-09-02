@@ -24,7 +24,7 @@ def _extract_pptx(path: Path) -> list[tuple[str, str]]:
                 for row in shape.table.rows:
                     texts.append(" | ".join(c.text.strip() for c in row.cells))
         if texts:
-            out.append((f"slide {i}", "\n".join(texts)))
+            out.append((f"slide {i}", "\n\n".join(texts)))
     return out
 
 
@@ -50,7 +50,9 @@ def _extract_docx(path: Path) -> list[tuple[str, str]]:
     for table in d.tables:
         for row in table.rows:
             parts.append(" | ".join(c.text.strip() for c in row.cells))
-    text = "\n".join(parts)
+    text = "\n\n".join(parts)  # blank line between paragraphs, not single \n — a single \n
+    # collapses into one run-on paragraph when this text later goes through a Markdown renderer
+    # (confirmed: made the PDF export of a question-bank docx render as one solid wall of text).
     return [("document", text)] if text.strip() else []
 
 
@@ -65,7 +67,7 @@ def _extract_xlsx(path: Path) -> list[tuple[str, str]]:
             if any(c is not None for c in row):
                 rows.append(" | ".join("" if c is None else str(c) for c in row))
         if rows:
-            out.append((f"sheet '{ws.title}'", "\n".join(rows)))
+            out.append((f"sheet '{ws.title}'", "\n\n".join(rows)))
     return out
 
 
