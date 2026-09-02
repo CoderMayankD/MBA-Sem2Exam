@@ -45,5 +45,10 @@ shared/
 # ---- Screenshot images extracted from lectures — keep the repo text-only/lean ----
 *.png
 
+# ---- Faculty study-material source PDFs (watermarked "Confidential" BITS WILP decks) ----
+# Large (>100MB, rejected by GitHub) and not ours to redistribute — kept local only.
+ENCRYPTED*.pdf
+*NSP*.pdf
+
 # ---- LinkedIn / promo assets (personal, not part of the pipeline) ----
 linkedin/
